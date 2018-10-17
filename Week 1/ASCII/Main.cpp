@@ -2,7 +2,7 @@
 //Week 1
 //Challenge 1
 //Task 1
-//Description: Print ASCII numbers for letters A to Z
+//Description: Print ASCII numbers for non-capital letters a to z
 //Author: Liam McCormick
 //Date: 25/09/18
 
