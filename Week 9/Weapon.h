@@ -23,5 +23,5 @@ public:
 	void Weapon::SetWeaponStrength(int health);
 	int Weapon::GetWeaponStrength();
 	std::string Weapon::ToString();
-}
+};
 
