@@ -12,8 +12,8 @@ Item::Item() {
 	std::cout << "Default constructor for Item" << std::endl;
 }
 
-Item::Item(std::string itemName, int itemValue, float weight) 
-	:itemName_ {itemName}, itemValue_ {itemValue}, weight_ { weight} {
+Item::Item(std::string itemName, int itemValue, float itemWeight)
+	:itemName_{ itemName }, itemValue_{ itemValue }, itemWeight_{ itemWeight } {
 	std::cout << "Custom constructor for Item 1" << std::endl;
 }
 
@@ -38,18 +38,18 @@ int Item::GetItemValue() {
 	return itemValue_;
 }
 
-void Item::SetWeight(float weight) {
-	weight_ = weight;
+void Item::SetItemWeight(float itemWeight) {
+	itemWeight_ = itemWeight;
 }
 
-float Item::GetWeight() {
-	return weight_;
+float Item::GetItemWeight() {
+	return itemWeight_;
 }
 
 std::string Item::ToString() {
 	std::string itemNameString = GetItemName();
 	std::string itemValueString = std::to_string(GetItemValue());
-	//std::string weight = std::to_string(GetWeight());
+	//std::string itemWeightString = std::to_string(GetItemWeight());
 
 	return itemString_ = "Name: " + itemNameString + "Value: " + itemValueString;
 }
