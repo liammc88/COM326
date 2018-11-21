@@ -6,22 +6,23 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include "Item.h"
 
 class Weapon : public Item {
 private:
 	int weaponHitStrength_;
 	int weaponHealth_;
+	std::string weaponString_;
 
 public:
 	Weapon();
-	Weapon(std::string weaponName, int value, float weight, int hitStrength, int health);
+	Weapon(std::string weaponName, int value, float itemWeight, int WeaponHitStrength, int weaponHealth);
 
 	void SetWeaponName(std::string weaponName);
 	std::string GetWeaponName();
 	void SetWeaponHitStrength(int weaponHitStrength);
-	int Weapon::GetWeaponHitStrength();
-	void Weapon::SetWeaponStrength(int health);
-	int Weapon::GetWeaponStrength();
-	std::string Weapon::ToString();
+	int GetWeaponHitStrength();
+	void SetWeaponHealth(int health);
+	int GetWeaponHealth();
+	std::string ToString();
 };
-
