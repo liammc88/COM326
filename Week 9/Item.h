@@ -11,13 +11,13 @@ class Item {
 private:
 	std::string itemName_;
 	int itemValue_;
-	float weight_;
+	float itemWeight_;
 	std::string itemString_;
 
 public:
 	//constructor and destructors
 	Item();
-	Item(std::string itemName, int itemValue, float weight);
+	Item(std::string itemName, int itemValue, float itemWeight);
 	~Item();
 	std::string ToString();
 
@@ -26,6 +26,6 @@ public:
 	std::string GetItemName();
 	void SetItemValue(int itemValue);
 	int GetItemValue();
-	void SetWeight(float weight);
-	float GetWeight();
+	void SetItemWeight(float itemWeight);
+	float GetItemWeight();
 };
