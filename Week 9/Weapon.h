@@ -17,6 +17,11 @@ public:
 	Weapon(std::string weaponName, int value, float weight, int hitStrength, int health);
 
 	void SetWeaponName(std::string weaponName);
-	std::string SetWeaponName();
-	void SetWeaponStrength(int hitStrength);
+	std::string GetWeaponName();
+	void SetWeaponHitStrength(int weaponHitStrength);
+	int Weapon::GetWeaponHitStrength();
+	void Weapon::SetWeaponStrength(int health);
+	int Weapon::GetWeaponStrength();
+	std::string Weapon::ToString();
 }
+
