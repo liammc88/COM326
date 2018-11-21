@@ -48,8 +48,8 @@ float Item::GetWeight() {
 
 std::string Item::ToString() {
 	std::string itemNameString = GetItemName();
-	std::string itemValue = std::to_string(GetItemValue());
+	std::string itemValueString = std::to_string(GetItemValue());
 	//std::string weight = std::to_string(GetWeight());
 
-	return itemString_ = "Name: " + itemNameString + "Value: " + itemValue;
+	return itemString_ = "Name: " + itemNameString + "Value: " + itemValueString;
 }
